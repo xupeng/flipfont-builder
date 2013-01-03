@@ -35,7 +35,7 @@ mkdir -p build && cp -rf ${APK_TEMPLATE} ${build_dir}
 sed -i -e "s/${PKG_NAME_STUB}/${pkg_name}/g" ${build_dir}/AndroidManifest.xml
 
 # copy the TTF font
-cp ${ttffont} ${build_dir}/assets/fonts/${pkg_name}.ttf
+mkdir -p ${build_dir}/assets/fonts && cp ${ttffont} ${build_dir}/assets/fonts/${pkg_name}.ttf
 
 # process the font configuration XML
 mv ${build_dir}/assets/xml/${PKG_NAME_STUB}.xml ${build_dir}/assets/xml/${pkg_name}.xml
