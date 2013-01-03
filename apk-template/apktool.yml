@@ -1,0 +1,8 @@
+version: 1.5.0.5a056e3
+apkFileName: xupeng-font.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '7'
